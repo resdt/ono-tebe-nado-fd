@@ -56,6 +56,7 @@ body {
 .cover {
   position: relative;
   z-index: -2;
+  margin-bottom: 179px;
   background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
@@ -113,4 +114,78 @@ body {
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
+}
+
+.auction-lots {
+  margin: 0 24px 120px;
+}
+
+.section__header {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.auction-lots__list {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.auction-lots__header {
+  margin-bottom: 27px;
+  margin-left: 40px;
+}
+
+.lot-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  padding: 48px 40px;
+  height: 100%;
+  min-height: 596px;
+  color: #fff;
+}
+
+.lot-card__title {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+.lot-card__text {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.lot-card-director {
+  z-index: -2;
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lot-card-book {
+  z-index: -2;
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lot-card-painting {
+  z-index: -2;
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.see-more {
+  margin: 40px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
