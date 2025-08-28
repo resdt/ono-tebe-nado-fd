@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 96px 50px;
   font-size: 18px;
 }
 
@@ -226,7 +226,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
-  padding: 82px 50px;
+  padding: 0 50px 82px;
   font-size: 18px;
 }
 
