@@ -6,17 +6,19 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  background-color: #fff;
   padding: 0 50px;
   min-height: 288px;
   font-size: 18px;
 }
 
 .navigation__list {
-  display: flex;
   gap: 33px;
   list-style: circle;
   text-transform: lowercase;
+}
+
+.navigation__list_line {
+  display: flex;
 }
 
 .navigation__item_bare {
@@ -40,12 +42,15 @@ body {
 .address__list {
   display: flex;
   flex-direction: column;
-  justify-self: end;
   gap: 0.8px;
   width: 240px;
   font-style: normal;
   line-height: 1.3;
   list-style: none;
+}
+
+.address__list_right {
+  justify-self: end;
 }
 
 .address__link {
@@ -220,4 +225,29 @@ body {
   gap: 24px;
   font-size: 20px;
   line-height: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  padding: 0 50px;
+  min-height: 180px;
+  font-size: 18px;
+}
+
+.navigation_type_footer {
+  list-style: none;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.socials__image {
+  width: 48px;
+  height: 48px;
 }
