@@ -124,17 +124,16 @@
 .auction-lots {
   margin-bottom: 120px;
   padding: 0 24px;
+  font-size: 20px;
 }
 
 .auction-lots__header {
-  margin-bottom: 27px;
-  margin-left: 40px;
+  margin: 0 0 27px 40px;
 }
 
 .auction-lots__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
   gap: 25px;
   margin-bottom: 30px;
   list-style: none;
@@ -165,10 +164,6 @@
   text-transform: uppercase;
 }
 
-.lot-card__text {
-  font-size: 20px;
-}
-
 .lot-card_type_film {
   background-image: url(../images/card-lot-01.jpg);
 }
@@ -183,7 +178,6 @@
 
 .auction-lots__see-more {
   margin: 40px;
-  font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 3px;
   text-transform: lowercase;
