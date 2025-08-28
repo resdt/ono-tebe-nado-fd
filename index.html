@@ -30,22 +30,12 @@
         <img
           class="logo__image"
           src="images/logo-black.svg"
-          alt="Логотип сайта «Оно тебе надо»"
+          alt="Site logo black"
       /></a>
-      <address class="address">
-        <ul class="address__list address__list_right">
-          <li class="address__item">
-            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="address__item">
-            <a class="address__link" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li class="address__item">
-            <p>наб. Принсенграхт 263- 265, Амстердам</p>
-          </li>
-        </ul>
+      <address class="address address_right">
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
     <main class="main">
@@ -60,59 +50,74 @@
           <p class="bet-signature__description">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-signature__button">Сделать ставку</button>
+          <button class="bet-signature__button" type="button">
+            Сделать ставку
+          </button>
         </div>
       </section>
       <section class="auction-lots" id="auction-lots">
         <h2 class="section-header auction-lots__header">Лоты</h2>
         <ul class="auction-lots__list">
           <li class="auction-lots__item">
-            <article class="lot-card lot-card_type_film">
-              <div class="overlay"></div>
-              <a class="lot-card__title" href="">
-                Фильм режиссёра, который бросил киношколу
-              </a>
-              <p class="lot-card__text">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </article>
+            <a href="#0">
+              <article class="lot-card lot-card_type_film">
+                <div class="overlay"></div>
+                <h3 class="lot-card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="lot-card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
+              </article>
+            </a>
           </li>
           <li class="auction-lots__item">
-            <article class="lot-card lot-card_type_book">
-              <div class="overlay"></div>
-              <a class="lot-card__title" href="">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </a>
-              <p class="lot-card__text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-            </article>
+            <a href="#0">
+              <article class="lot-card lot-card_type_book">
+                <div class="overlay"></div>
+                <h3 class="lot-card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="lot-card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+              </article>
+            </a>
           </li>
           <li class="auction-lots__item">
-            <article class="lot-card lot-card_type_picture">
-              <div class="overlay"></div>
-              <a class="lot-card__title" href="">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </a>
-              <p class="lot-card__text">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-            </article>
+            <a href="#0">
+              <article class="lot-card lot-card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="lot-card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="lot-card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
           </li>
         </ul>
-        <a class="auction-lots__see-more">Посмотреть больше</a>
+        <a class="auction-lots__see-more" href="#0">Посмотреть больше</a>
       </section>
       <section class="about-auction" id="about-auction">
-        <div class="about-auction__logo"></div>
+        <div class="about-auction__logo">
+          <img
+            class="about-auction__logo-image"
+            src="images/logo-white.svg"
+            alt="Site logo white"
+          />
+        </div>
         <div class="about-auction__text">
           <h2 class="section-header about-auction__header">Об аукционе</h2>
           <p>
@@ -135,19 +140,9 @@
     </main>
     <footer class="footer">
       <address class="address">
-        <ul class="address__list">
-          <li class="address__item">
-            <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-          </li>
-          <li class="address__item">
-            <a class="address__link" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li class="address__item">
-            <p>наб. Принсенграхт 263-265, Амстердам</p>
-          </li>
-        </ul>
+        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="navigation">
         <ul class="navigation__list navigation_type_footer">
@@ -166,17 +161,17 @@
       </nav>
       <ul class="socials">
         <li class="socials__item">
-          <a class="socials__link" href=""
+          <a class="socials__link" href="" target="_blank"
             ><img class="socials__image" src="images/yt.svg" alt="YouTube logo"
           /></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href=""
+          <a class="socials__link" href="" target="_blank"
             ><img class="socials__image" src="images/vk.svg" alt="VK logo"
           /></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link" href=""
+          <a class="socials__link" href="" target="_blank"
             ><img
               class="socials__image"
               src="images/pinterest.svg"
