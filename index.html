@@ -14,36 +14,39 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item navigation__item_bare">
-            <a href="#0" class="navigation__link navigation__link_active"
-              >главная</a
+            <a class="navigation__link navigation__link_active" href="#0"
+              >Главная</a
             >
           </li>
           <li class="navigation__item">
-            <a href="#auction-lots" class="navigation__link">посмотреть лоты</a>
+            <a class="navigation__link" href="#auction-lots">Посмотреть лоты</a>
           </li>
           <li class="navigation__item">
-            <a href="#about-auction" class="navigation__link">об аукционе</a>
+            <a class="navigation__link" href="#about-auction">Об аукционе</a>
           </li>
         </ul>
       </nav>
       <a class="logo">
         <img
+          class="logo__image"
           src="images/logo-black.svg"
           alt="Логотип сайта «Оно тебе надо»"
-          class="logo__image"
       /></a>
       <address class="address">
         <ul class="address__list">
-          <li class="address__item"></li>
-          <a href="tel:+9 999 555 5555" class="address__link"
-            >+9 999 555 5555</a
-          >
-          <li class="address__item"></li>
-          <a href="mailto:info@sobaka.ge" class="address__link"
-            >info@sobaka.ge</a
-          >
-          <li class="address__item"></li>
-          <p class="address__link">наб. Принсенграхт 263- 265, Амстердам</p>
+          <li class="address__item">
+            <a class="address__link" href="tel:+9 999 555 5555"
+              >+9 999 555 5555</a
+            >
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:info@sobaka.ge"
+              >info@sobaka.ge</a
+            >
+          </li>
+          <li class="address__item">
+            <p class="address__link">наб. Принсенграхт 263- 265, Амстердам</p>
+          </li>
         </ul>
       </address>
     </header>
@@ -51,22 +54,24 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="title">
-          <span class="title__item title__item_left">Оно</span>
+          <span class="title__item">Оно</span>
           <span class="title__item title__item_center">тебе</span>
           <span class="title__item title__item_right">надо</span>
         </h1>
-        <div class="signature">
-          <p class="description">Аукцион вещей, в которые никто не верил</p>
-          <button class="bet-button">Сделать ставку</button>
+        <div class="bet-signature">
+          <p class="bet-signature__description">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-signature__button">Сделать ставку</button>
         </div>
       </section>
       <section class="auction-lots" id="auction-lots">
         <h2 class="section__header auction-lots__header">Лоты</h2>
         <ul class="auction-lots__list">
           <li class="auction-lots__item">
-            <article class="lot-card lot-card-director">
+            <article class="lot-card lot-card_type_film">
               <div class="overlay"></div>
-              <a class="lot-card__title">
+              <a class="lot-card__title" href="">
                 Фильм режиссёра, который бросил киношколу
               </a>
               <p class="lot-card__text">
@@ -76,9 +81,9 @@
             </article>
           </li>
           <li class="auction-lots__item">
-            <article class="lot-card lot-card-book">
+            <article class="lot-card lot-card_type_book">
               <div class="overlay"></div>
-              <a class="lot-card__title">
+              <a class="lot-card__title" href="">
                 Книга, где описан один скучный день из жизни рекламного агента
               </a>
               <p class="lot-card__text">
@@ -92,9 +97,9 @@
             </article>
           </li>
           <li class="auction-lots__item">
-            <article class="lot-card lot-card-painting">
+            <article class="lot-card lot-card_type_picture">
               <div class="overlay"></div>
-              <a class="lot-card__title">
+              <a class="lot-card__title" href="">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </a>
               <p class="lot-card__text">
@@ -106,7 +111,7 @@
             </article>
           </li>
         </ul>
-        <a class="see-more">посмотреть больше</a>
+        <a class="auction-lots__see-more">Посмотреть больше</a>
       </section>
       <section class="about-auction" id="about-auction">
         <div class="about-auction-logo__container"></div>
@@ -133,28 +138,33 @@
     <footer class="footer">
       <address class="address">
         <ul class="address__list">
-          <li class="address__item"></li>
-          <a href="tel:+9 999 555 5555" class="address__link"
-            >+9 999 555 5555</a
-          >
-          <li class="address__item"></li>
-          <a href="mailto:info@sobaka.ge" class="address__link"
-            >info@sobaka.ge</a
-          >
-          <li class="address__item"></li>
-          <p class="address__text">наб. Принсенграхт 263-265, Амстердам</p>
+          <li class="address__item">
+            <a class="address__link" href="tel:+9 999 555 5555"
+              >+9 999 555 5555</a
+            >
+          </li>
+          <li class="address__item">
+            <a class="address__link" href="mailto:info@sobaka.ge"
+              >info@sobaka.ge</a
+            >
+          </li>
+          <li class="address__item">
+            <p class="address__link">наб. Принсенграхт 263- 265, Амстердам</p>
+          </li>
         </ul>
       </address>
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#0" class="navigation__link">главная</a>
+          <li class="navigation__item navigation__item_bare">
+            <a class="navigation__link navigation__link_active" href="#0"
+              >Главная</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#auction-lots" class="navigation__link">посмотреть лоты</a>
+            <a class="navigation__link" href="#auction-lots">Посмотреть лоты</a>
           </li>
           <li class="navigation__item">
-            <a href="#about-auction" class="navigation__link">об аукционе</a>
+            <a class="navigation__link" href="#about-auction">Об аукционе</a>
           </li>
         </ul>
       </nav>
