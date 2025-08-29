@@ -127,6 +127,10 @@
   font-size: 20px;
 }
 
+.auction-lots__link {
+  text-decoration: none;
+}
+
 .auction-lots__header {
   margin: 0 0 27px 40px;
 }
@@ -192,7 +196,9 @@
 }
 
 .about-auction__logo {
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 35px 47px;
   border-radius: 50%;
   background-color: black;
@@ -201,20 +207,21 @@
 }
 
 .about-auction__logo-image {
-  transform: scale(0.62);
+  width: 148px;
+  height: 114px;
 }
 
-.about-auction__header {
-  margin: 148px 0 87px;
-}
-
-.about-auction__text {
+.about-auction__content {
   display: flex;
   grid-column: 2;
   flex-direction: column;
   gap: 24px;
   font-size: 20px;
   line-height: 24px;
+}
+
+.about-auction__header {
+  margin: 148px 0 87px;
 }
 
 .footer {
@@ -224,7 +231,7 @@
   font-size: 18px;
 }
 
-.navigation_type_footer {
+.navigation__list_bare_center {
   list-style: none;
   text-align: center;
 }

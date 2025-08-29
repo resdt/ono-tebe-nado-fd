@@ -27,18 +27,15 @@
         </ul>
       </nav>
       <a class="logo">
-        <img
-          class="logo__image"
-          src="images/logo-black.svg"
-          alt="Site logo black"
-      /></a>
+        <img src="images/logo-black.svg" alt="Site logo black" />
+      </a>
       <address class="address address_right">
         <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </address>
     </header>
-    <main class="main">
+    <main>
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="title">
@@ -58,14 +55,14 @@
       <section class="auction-lots" id="auction-lots">
         <h2 class="section-header auction-lots__header">Лоты</h2>
         <ul class="auction-lots__list">
-          <li class="auction-lots__item">
-            <a href="#0">
+          <li>
+            <a class="auction-lots__link" href="#0">
               <article class="lot-card lot-card_type_film">
                 <div class="overlay"></div>
                 <h3 class="lot-card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="lot-card__text">
+                <p>
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -73,14 +70,14 @@
               </article>
             </a>
           </li>
-          <li class="auction-lots__item">
-            <a href="#0">
+          <li>
+            <a class="auction-lots__link" href="#0">
               <article class="lot-card lot-card_type_book">
                 <div class="overlay"></div>
                 <h3 class="lot-card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="lot-card__text">
+                <p>
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -91,14 +88,14 @@
               </article>
             </a>
           </li>
-          <li class="auction-lots__item">
-            <a href="#0">
+          <li>
+            <a class="auction-lots__link" href="#0">
               <article class="lot-card lot-card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="lot-card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="lot-card__text">
+                <p>
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -118,7 +115,7 @@
             alt="Site logo white"
           />
         </div>
-        <div class="about-auction__text">
+        <div class="about-auction__content">
           <h2 class="section-header about-auction__header">Об аукционе</h2>
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
@@ -145,7 +142,7 @@
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="navigation">
-        <ul class="navigation__list navigation_type_footer">
+        <ul class="navigation__list navigation__list_bare_center">
           <li class="navigation__item">
             <a class="navigation__link navigation__link_active" href="#0"
               >Главная</a
@@ -160,23 +157,28 @@
         </ul>
       </nav>
       <ul class="socials">
-        <li class="socials__item">
-          <a class="socials__link" href="" target="_blank"
-            ><img class="socials__image" src="images/yt.svg" alt="YouTube logo"
-          /></a>
+        <li>
+          <a class="socials__link" href="" target="_blank">
+            <img
+              class="socials__image"
+              src="images/yt.svg"
+              alt="YouTube logo"
+            />
+          </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="" target="_blank"
-            ><img class="socials__image" src="images/vk.svg" alt="VK logo"
-          /></a>
+        <li>
+          <a class="socials__link" href="" target="_blank">
+            <img class="socials__image" src="images/vk.svg" alt="VK logo" />
+          </a>
         </li>
-        <li class="socials__item">
-          <a class="socials__link" href="" target="_blank"
-            ><img
+        <li>
+          <a class="socials__link" href="" target="_blank">
+            <img
               class="socials__image"
               src="images/pinterest.svg"
               alt="Pinterest logo"
-          /></a>
+            />
+          </a>
         </li>
       </ul>
     </footer>
