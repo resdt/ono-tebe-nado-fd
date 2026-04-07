@@ -28,7 +28,7 @@
   text-decoration: none;
 }
 
-.header__logo {
+.header__logo-link {
   display: block;
   justify-self: center;
   margin-top: 93px;
