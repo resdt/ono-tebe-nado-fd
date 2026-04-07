@@ -1,68 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-      <nav class="navigation">
-        <ul class="navigation__list navigation__list_line">
-          <li class="navigation__item navigation__item_bare">
-            <a class="navigation__link navigation__link_active" href="#0"
-              >Главная</a
-            >
+      <nav>
+        <ul class="header__navigation">
+          <li>
+            <a class="link navigation__link_active" href="#0">Главная</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#auction-lots">Посмотреть лоты</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#about-auction">Об аукционе</a>
-          </li>
+          <li><a class="link" href="#lots">Посмотреть лоты</a></li>
+          <li><a class="link" href="#about">Об аукционе</a></li>
         </ul>
       </nav>
-      <a class="logo">
-        <img src="images/logo-black.svg" alt="Site logo black" />
-      </a>
-      <address class="address address_right">
-        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      <img
+        class="header__logo"
+        src="./images/logo-black.svg"
+        alt="Логотип аукциона Оно тебе надо"
+      />
+      <address class="address header__address">
+        <ul class="address__list">
+          <li>
+            <a class="link" href="tel:+9 999 555 5555">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a class="link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          </li>
+          <li>наб. Принсенграхт 263-265, Амстердам</li>
+        </ul>
       </address>
     </header>
+
     <main>
       <section class="cover">
-        <div class="overlay"></div>
         <h1 class="title">
-          <span class="title__item">Оно</span>
-          <span class="title__item title__item_center">тебе</span>
-          <span class="title__item title__item_right">надо</span>
+          <span>Оно</span>
+          <span class="title__item_center"
+            >теб<span class="last-letter">е</span></span
+          >
+          <span class="title__item_right"
+            >над<span class="last-letter">о</span></span
+          >
         </h1>
-        <div class="bet-signature">
-          <p class="bet-signature__description">
+        <div class="description-container">
+          <p class="cover__description">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-signature__button" type="button">
-            Сделать ставку
-          </button>
+          <a class="bet-button" href="#0">Сделать ставку</a>
         </div>
       </section>
-      <section class="auction-lots" id="auction-lots">
-        <h2 class="section-header auction-lots__header">Лоты</h2>
-        <ul class="auction-lots__list">
+      <section class="section lots-section">
+        <h2 class="subtitle lots-subtitle" id="lots">Лоты</h2>
+        <ul class="card-list">
           <li>
-            <a class="auction-lots__link" href="#0">
-              <article class="lot-card lot-card_type_film">
-                <div class="overlay"></div>
-                <h3 class="lot-card__title">
+            <a class="card-link" href="#0">
+              <article class="card director-card">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p>
+                <p class="card__description">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -71,13 +74,12 @@
             </a>
           </li>
           <li>
-            <a class="auction-lots__link" href="#0">
-              <article class="lot-card lot-card_type_book">
-                <div class="overlay"></div>
-                <h3 class="lot-card__title">
+            <a class="card-link" href="#0">
+              <article class="card book-card">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p>
+                <p class="card__description">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -89,13 +91,12 @@
             </a>
           </li>
           <li>
-            <a class="auction-lots__link" href="#0">
-              <article class="lot-card lot-card_type_picture">
-                <div class="overlay"></div>
-                <h3 class="lot-card__title">
+            <a class="card-link" href="#0">
+              <article class="card painting-card">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p>
+                <p class="card__description">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков... Сколько бы вы на такое поставили, если бы не знали,
@@ -105,21 +106,21 @@
             </a>
           </li>
         </ul>
-        <a class="auction-lots__see-more" href="#0">Посмотреть больше</a>
+        <a class="link see-more" href="#0">Посмотреть больше</a>
       </section>
-      <section class="about-auction" id="about-auction">
-        <div class="about-auction__logo">
+      <section class="section about-section">
+        <div class="about__logo-container">
           <img
-            class="about-auction__logo-image"
-            src="images/logo-white.svg"
-            alt="Site logo white"
+            class="about__logo"
+            src="./images/logo-white.svg"
+            alt="Логотип аукциона Оно тебе надо"
           />
         </div>
-        <div class="about-auction__content">
-          <h2 class="section-header about-auction__header">Об аукционе</h2>
+        <h2 id="about" class="subtitle about-subtitle">Об аукционе</h2>
+        <div class="about__description">
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
-            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
+            дорогого антиквариата. Наши лоты вообще не должны были попасть ни на
             один аукцион. Потому что кому нужен дневник девочки-подростка или
             картина, которую может нарисовать даже ребёнок? Кому нужны все эти
             странные вещи, созданные любителями?
@@ -127,7 +128,7 @@
           <p>
             Слишком сложные или, наоборот, слишком простые. Опережающие своё
             время. В пух и прах растерзанные критиками. Непринятые и непонятые.
-            Когда-то они казались просто неудачными. Но, несмотря на критику,
+            Когда-то они казались просто неудачными. Но, несмотря на критику,
             кажущуюся простоту или сложность, сейчас без этих лотов невозможно
             представить современную культуру. Когда в эти вещи не верил никто,
             продолжали верить их создатели. И сейчас эти лоты стали культовыми.
@@ -135,47 +136,46 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <address class="address">
-        <a class="address__link" href="tel:+99995555555">+9 999 555 5555</a>
-        <a class="address__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <p>наб. Принсенграхт 263-265, Амстердам</p>
+        <ul class="address__list">
+          <li>
+            <a class="link" href="tel:+9 999 555 5555">+9 999 555 5555</a>
+          </li>
+          <li>
+            <a class="link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+          </li>
+          <li>наб. Принсенграхт 263-265, Амстердам</li>
+        </ul>
       </address>
-      <nav class="navigation">
-        <ul class="navigation__list navigation__list_bare_center">
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link_active" href="#0"
-              >Главная</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#auction-lots">Посмотреть лоты</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#about-auction">Об аукционе</a>
-          </li>
+      <nav>
+        <ul class="footer__navigation">
+          <li><a class="link navigation__link_active" href="#0">Главная</a></li>
+          <li><a class="link" href="#lots">Посмотреть лоты</a></li>
+          <li><a class="link" href="#about">Об аукционе</a></li>
         </ul>
       </nav>
-      <ul class="socials">
+      <ul class="socials-list">
         <li>
-          <a class="socials__link" href="" target="_blank">
+          <a href="https://youtube.com" target="_blank">
             <img
               class="socials__image"
-              src="images/yt.svg"
+              src="./images/yt.svg"
               alt="YouTube logo"
             />
           </a>
         </li>
         <li>
-          <a class="socials__link" href="" target="_blank">
-            <img class="socials__image" src="images/vk.svg" alt="VK logo" />
+          <a href="https://vk.com" target="_blank">
+            <img class="socials__image" src="./images/vk.svg" alt="VK logo" />
           </a>
         </li>
         <li>
-          <a class="socials__link" href="" target="_blank">
+          <a href="https://pinterest.com" target="_blank">
             <img
               class="socials__image"
-              src="images/pinterest.svg"
+              src="./images/pinterest.svg"
               alt="Pinterest logo"
             />
           </a>
