@@ -12,21 +12,22 @@
   <body class="page">
     <header class="header">
       <nav>
-        <ul class="header__navigation">
+        <ul class="navigation">
           <li>
-            <a class="link navigation__link_active" href="#0">Главная</a>
+            <a class="link link_active" href="#0">Главная</a>
           </li>
           <li><a class="link" href="#lots">Посмотреть лоты</a></li>
           <li><a class="link" href="#about">Об аукционе</a></li>
         </ul>
       </nav>
-      <a class="header__logo-link" href="#0">
+      <a class="logo" href="#0">
         <img
+          class="logo__image"
           src="./images/logo-black.svg"
           alt="Логотип аукциона Оно тебе надо"
         />
       </a>
-      <address class="address header__address">
+      <address class="address">
         <ul class="address__list">
           <li>
             <a class="link" href="tel:+99995555555">+9 999 555 5555</a>
@@ -43,26 +44,26 @@
       <section class="cover">
         <h1 class="title">
           <span>Оно</span>
-          <span class="title__item_center"
-            >теб<span class="last-letter">е</span></span
-          >
-          <span class="title__item_right"
-            >над<span class="last-letter">о</span></span
-          >
+          <span class="title_center">
+            теб<span class="last-letter">е</span>
+          </span>
+          <span class="title_right">
+            над<span class="last-letter">о</span>
+          </span>
         </h1>
-        <div class="description-container">
+        <div class="cover__description-container">
           <p class="cover__description">
             Аукцион вещей, в которые никто не верил
           </p>
           <a class="bet-button" href="#0">Сделать ставку</a>
         </div>
       </section>
-      <section class="section lots-section">
-        <h2 class="subtitle lots-subtitle" id="lots">Лоты</h2>
+      <section class="section lots">
+        <h2 class="subtitle lots__subtitle" id="lots">Лоты</h2>
         <ul class="card-list">
           <li>
             <a class="card-link" href="#0">
-              <article class="card director-card">
+              <article class="card card_type_director">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -76,7 +77,7 @@
           </li>
           <li>
             <a class="card-link" href="#0">
-              <article class="card book-card">
+              <article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -93,7 +94,7 @@
           </li>
           <li>
             <a class="card-link" href="#0">
-              <article class="card painting-card">
+              <article class="card card_type_painting">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -109,7 +110,7 @@
         </ul>
         <a class="link see-more" href="#0">Посмотреть больше</a>
       </section>
-      <section class="section about-section">
+      <section class="section about">
         <div class="about__logo-container">
           <img
             class="about__logo"
@@ -117,7 +118,7 @@
             alt="Логотип аукциона Оно тебе надо"
           />
         </div>
-        <h2 id="about" class="subtitle about-subtitle">Об аукционе</h2>
+        <h2 id="about" class="subtitle about__subtitle">Об аукционе</h2>
         <div class="about__description">
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
@@ -139,7 +140,7 @@
     </main>
 
     <footer class="footer">
-      <address class="address">
+      <address class="address address_footer">
         <ul class="address__list">
           <li>
             <a class="link" href="tel:+99995555555">+9 999 555 5555</a>
@@ -151,13 +152,13 @@
         </ul>
       </address>
       <nav>
-        <ul class="footer__navigation">
-          <li><a class="link navigation__link_active" href="#0">Главная</a></li>
+        <ul class="navigation navigation_footer">
+          <li><a class="link link_active" href="#0">Главная</a></li>
           <li><a class="link" href="#lots">Посмотреть лоты</a></li>
           <li><a class="link" href="#about">Об аукционе</a></li>
         </ul>
       </nav>
-      <ul class="socials-list">
+      <ul class="socials">
         <li>
           <a href="https://youtube.com" target="_blank">
             <img

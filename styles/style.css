@@ -11,7 +11,7 @@
   font-size: 18px;
 }
 
-.header__navigation {
+.navigation {
   display: flex;
   gap: 32px;
   margin-top: 133px;
@@ -24,11 +24,11 @@
   text-underline-offset: 4px;
 }
 
-.navigation__link_active {
+.link_active {
   text-decoration: none;
 }
 
-.header__logo-link {
+.logo {
   display: block;
   justify-self: center;
   margin-top: 93px;
@@ -36,15 +36,16 @@
   height: 105px;
 }
 
+.logo__image {
+  height: 100%;
+}
+
 .address {
+  justify-self: end;
+  margin-top: 95px;
   width: 240px;
   font-style: normal;
   line-height: 24px;
-}
-
-.header__address {
-  justify-self: end;
-  margin-top: 95px;
 }
 
 .address__list {
@@ -87,11 +88,11 @@
   text-transform: uppercase;
 }
 
-.title__item_center {
+.title_center {
   text-align: center;
 }
 
-.title__item_right {
+.title_right {
   text-align: right;
 }
 
@@ -99,7 +100,7 @@
   letter-spacing: 0;
 }
 
-.description-container {
+.cover__description-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,7 +125,7 @@
   padding: 0 24px;
 }
 
-.lots-section {
+.lots {
   margin-bottom: 120px;
 }
 
@@ -134,7 +135,7 @@
   text-transform: uppercase;
 }
 
-.lots-subtitle {
+.lots__subtitle {
   margin: 0 0 27px 40px;
 }
 
@@ -192,15 +193,15 @@
   margin-top: auto;
 }
 
-.director-card {
+.card_type_director {
   background-image: url(../images/card-lot-01.jpg);
 }
 
-.book-card {
+.card_type_book {
   background-image: url(../images/card-lot-02.jpg);
 }
 
-.painting-card {
+.card_type_painting {
   background-image: url(../images/card-lot-03.jpg);
 }
 
@@ -209,7 +210,7 @@
   text-transform: lowercase;
 }
 
-.about-section {
+.about {
   display: grid;
   grid-template-columns: 1fr auto;
   column-gap: 72px;
@@ -233,7 +234,7 @@
   height: 114px;
 }
 
-.about-subtitle {
+.about__subtitle {
   padding: 136px 0 100px 0;
 }
 
@@ -253,13 +254,20 @@
   font-size: 18px;
 }
 
-.footer__navigation {
+.address_footer {
+  justify-self: start;
+  margin-top: 0;
+}
+
+.navigation_footer {
+  display: unset;
+  margin-top: unset;
   list-style: none;
   text-align: center;
   text-transform: lowercase;
 }
 
-.socials-list {
+.socials {
   display: flex;
   justify-self: end;
   gap: 48px;
