@@ -65,6 +65,7 @@
   height: 757px;
   color: white;
   font-size: 22px;
+  text-transform: uppercase;
 }
 
 .cover::before {
@@ -85,7 +86,6 @@
   font-size: 100px;
   line-height: 115%;
   letter-spacing: 30%;
-  text-transform: uppercase;
 }
 
 .title_center {
@@ -109,7 +109,6 @@
 
 .cover__description {
   line-height: 28px;
-  text-transform: uppercase;
   word-spacing: 18.6px;
 }
 
@@ -118,7 +117,6 @@
   padding: 12px 32px;
   font-size: inherit;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .section {
@@ -221,8 +219,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35px;
-  margin-left: 47px;
+  margin: 35px 0 0 47px;
   border-radius: 50%;
   background-color: black;
   width: 240px;
@@ -256,7 +253,7 @@
 
 .address_footer {
   justify-self: start;
-  margin-top: 0;
+  margin-top: unset;
 }
 
 .navigation_footer {
